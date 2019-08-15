@@ -1,0 +1,155 @@
+body{
+    background-color: #F5F3F2;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #252525;
+    color: #F5F3F2;
+    border-bottom: 2px solid #D8A401; 
+}
+
+.main-header a{
+    color: #F5F3F2;
+}
+
+.main-header a:hover{
+    color: #CCCAC9;
+}
+
+.main-header h2{
+    margin-left: 2vw;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+    margin-right: 2vw;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.welcome-content{
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.nav-welcome{
+    display: none;
+}
+
+.welcome{
+    position: relative;
+    background-color: #252525;
+    height: 55vh;
+    width: 70vw;
+    margin-top: 15vh;
+    margin-left: auto;
+    box-shadow: 5px 5px 25px #252525;
+    border-radius: 7px;
+}
+
+.inside-content{
+    position: absolute;
+    color: #CCCAC9;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-top: 2px solid #D8A401;
+    border-left: 2px solid #D8A401;
+    border-bottom: 2px solid #D8A401;
+    width: 100%;
+    font-size: 50px;
+}
+
+.inside-text{
+    margin-left: 5%;
+}
+
+.my-work{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252525;
+    color: #CCCAC9;
+}
+
+.my-work p{
+    margin-top: 5%;
+    font-size: 50px;
+    border-bottom: 2px solid #CCCAC9;
+}
+
+.inside-my-work{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CCCAC9;
+    color: #252525;
+    height: 60%;
+    width: 90%;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+
+/*Parte responsiva*/
+
+@media screen and (max-width: 400px){
+    .main-header{
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .nav-header{
+        display: none;
+    }
+
+    .nav-welcome{
+        display: flex;
+        height: 100%;
+    }
+
+    .nav-welcome ul{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-welcome a{
+        color: #252525;
+    }
+
+    .welcome h2,p{
+        font-size: 20px;
+    }
+
+    .my-work{
+        height: 180vh;
+    }
+
+    .my-work p{
+        font-size: 20px;
+    }
+
+    .inside-my-work{
+        height: 90%;
+        flex-direction: column;
+    }
+}
